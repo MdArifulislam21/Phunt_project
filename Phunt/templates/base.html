@@ -8,12 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="">
-    <title>About me</title>
+    <title>Phunt</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link  href="{% static 'open-iconic/font/css/open-iconic-bootstrap.css' %}" rel="stylesheet">
 
   </head>
-  <body>
+  <body> 
     <header>
     	<nav class="navbar navbar-expand-lg navbar-light bg-light">
     		<div class="container">
@@ -31,6 +32,7 @@
 			      <a class="nav-item nav-link" href="{% url 'signup' %}">Sign up</a>
 			      <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
 			      {% else %}
+			      	<a class="nav-item nav-link" href="{% url 'create' %}"><span class="oi oi-plus"></span></a>
 			      	<li class="nav-item {% if request.path == logout_url %} active {% endif %}">
           			<a class="nav-link" href="{{ logout_url }}">Logout</a>
        				 </li>
@@ -45,11 +47,6 @@
 
 	
 
-	<footer class="text-muted">
-		<div class="container text-center">
-			<p> Be the best in {% now "Y" %}</p>
-		</div>
-	</footer>
 
 	<div class="container">
 		
@@ -58,6 +55,10 @@
 
 	{% endblock %}
 	</div>
+
+	<footer class="footer fixed-bottom mt-auto py-3  text-center">
+	    <span class="text-muted">Be the best in {% now "Y" %}</span>
+	</footer>
 
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
