@@ -1,1 +1,1 @@
-web: gunicorn phunt-clone.wsgi
+web: gunicorn Phunt.wsgi
