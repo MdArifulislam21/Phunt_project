@@ -1,1 +1,1 @@
-web: gunicorn Phunt.wsgi
+web: gunicorn Phunt_project.wsgi
