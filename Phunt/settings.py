@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'Phunt.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'phunt',
-        'USER':'postgres',
-        'PASSWORD':'Arif12345',
-        "HOST": 'localhost',
+        'NAME': 'dduig4fitnnq4p',
+        'USER':'quvktbgpvlshlj',
+        'PASSWORD':'22458812a7288aaad1cfc8f41d23dd58316774987ec23610fb20ef95cd5a4e91',
+        "HOST": 'ec2-52-200-119-0.compute-1.amazonaws.com',
         'PORT':'5432',
 
 
