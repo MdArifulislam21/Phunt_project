@@ -25,7 +25,7 @@ SECRET_KEY = '9=f63x4x98bscb!=yh(a7v!%@7pohu%9k%kt1q!@fah8esn@72'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['phunt-clone.herokuapp.com']
 
 
 # Application definition
@@ -126,11 +126,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-
-STATICFILES_DIRS=[
-    os.path.join(BASE_DIR, 'Phunt/static/')
-]
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
